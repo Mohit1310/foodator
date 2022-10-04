@@ -12,11 +12,14 @@
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/orange_light_banner.xml" value="0.1805" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/search_background.xml" value="0.1805" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/viewholder_popular.xml" value="0.232" />
+        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.129296875" />
+        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout-w936dp/activity_login.xml" value="0.166796875" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_cart_list.xml" value="0.16" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_intro.xml" value="0.152" />
+        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_login.xml" value="0.14425675675675675" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_show_detail.xml" value="0.152" />
-        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_cart.xml" value="0.4" />
+        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_cart.xml" value="0.2" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_category.xml" value="0.264" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_popular.xml" value="0.264" />
       </map>
