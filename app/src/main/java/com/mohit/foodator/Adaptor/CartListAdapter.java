@@ -24,6 +24,8 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
     private ArrayList<FoodDomain> foodDomains;
     private ManagementCart managementCart;
     private ChangeNumberItemsListener changeNumberItemsListener;
+    private ViewHolder holder;
+    private int position;
 
     public CartListAdapter(ArrayList<FoodDomain> foodDomains, Context context, ChangeNumberItemsListener changeNumberItemsListener) {
         this.foodDomains = foodDomains;
@@ -44,11 +46,11 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         holder.totalEachItem.setText(String.valueOf(Math.round((foodDomains.get(position).getNumberInCart()*foodDomains.get(position).getFee())*100)/100));
         holder.num.setText(String.valueOf(foodDomains.get(position).getNumberInCart()));
 
-        int drawableResourceIde = holder.itemView.getContext().getResources().getIdentifier(foodDomains.get(position).getPic()
+        int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(foodDomains.get(position).getPic()
                 ,"drawable",holder.itemView.getContext().getPackageName());
 
         Glide.with(holder.itemView.getContext())
-                .load(drawableResourceIde)
+                .load(drawableResourceId)
                 .into(holder.pic);
 
         holder.plusItem.setOnClickListener(new View.OnClickListener() {
