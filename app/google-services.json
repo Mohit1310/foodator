@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "23552318738",
+    "project_id": "foodator-f94e2",
+    "storage_bucket": "foodator-f94e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23552318738:android:e3a5d6ac96bb45222a67cb",
+        "android_client_info": {
+          "package_name": "com.mohit.foodator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23552318738-sbb55mfqllisalgee0dkfmrlfd8p5gbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN7V9HURYcixr_baa1sPGYHSxU_n7m3iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23552318738-sbb55mfqllisalgee0dkfmrlfd8p5gbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
