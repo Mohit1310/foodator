@@ -1,6 +1,7 @@
 package com.mohit.foodator.Adaptor;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.mohit.foodator.MainActivity;
 import com.mohit.foodator.R;
 import com.mohit.foodator.ShowDetailActivity;
 import com.mohit.foodator.domain.FoodDomain;
@@ -20,9 +22,11 @@ import java.util.ArrayList;
 
 public class PopularAdaptor extends RecyclerView.Adapter<PopularAdaptor.ViewHolder> {
 
-    ArrayList<FoodDomain> popularFood;
+    private Context context;
+    private ArrayList<FoodDomain> popularFood;
 
-    public PopularAdaptor(ArrayList<FoodDomain> popularFood) {
+    public PopularAdaptor(Context context, ArrayList<FoodDomain> popularFood) {
+        this.context = context;
         this.popularFood = popularFood;
     }
 
@@ -47,7 +51,7 @@ public class PopularAdaptor extends RecyclerView.Adapter<PopularAdaptor.ViewHold
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(holder.itemView.getContext(), ShowDetailActivity.class);
-                intent.putExtra("object",popularFood.get(holder.getAdapterPosition()));//
+                intent.putExtra("object",popularFood.get(position));//
                 holder.itemView.getContext().startActivity(intent);
             }
         });

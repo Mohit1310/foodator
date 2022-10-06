@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         foodList.add(new FoodDomain("Cheese Burger","burger","beef, Gouda Cheese, special sauce, lettuce, tomato",8.79));
         foodList.add(new FoodDomain("Vegetable Pizza", "pizza2", "olive oil, Vegetable oil, pitted kalmata, cherry tomatoes, fresh oregano, basil", 8.5));
 
-        adapter2 = new PopularAdaptor(foodList);
+        adapter2 = new PopularAdaptor(this,foodList);
         recyclerViewPopularList.setAdapter(adapter2);
 
     }
