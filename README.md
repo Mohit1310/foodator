@@ -3,4 +3,4 @@ Made this watching YouTube tutorial, but there are some error hope to resolve it
 
 Video link:- https://youtu.be/9nWcPPHBzMk
 
-What is Found databinding error(s):
+Found databinding error(s): if your different id have same names it occurs
