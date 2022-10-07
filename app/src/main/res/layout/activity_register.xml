@@ -47,7 +47,31 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/email_reg"
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="#8e8e8e"
+            android:textColorHint="#8e8e8e"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/emailTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email"
@@ -56,7 +80,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/email_reg"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="8dp"
@@ -70,7 +94,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/pass_reg"
+            android:id="@+id/passRegTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -80,7 +104,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName1"
+            android:id="@+id/password_reg"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="8dp"
@@ -93,7 +117,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/confpass_reg"
+            android:id="@+id/confPassRegTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -103,7 +127,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/confpass_reg"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="8dp"
@@ -114,14 +138,6 @@
             android:textColor="#8e8e8e"
             android:textColorHint="#8e8e8e"
             android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Forgot your password?"
-            android:textColor="#4d4d4d" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -143,6 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
+                android:textStyle="bold"
                 android:layout_marginEnd="6dp"
                 android:text="or Register with"
                 android:textColor="#4d4d4d" />
@@ -164,7 +181,7 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/google_sigin"
                 style="@android:style/Widget.Button"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -197,8 +214,8 @@
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button3"
+        <Button
+            android:id="@+id/button_reg"
             style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="55dp"
