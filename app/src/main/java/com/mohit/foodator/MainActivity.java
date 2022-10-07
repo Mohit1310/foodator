@@ -34,18 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void bottomNavigation(){
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
-        LinearLayout homeBtn = findViewById(R.id.homeBtn);
+//        LinearLayout homeBtn = findViewById(R.id.homeBtn);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CartListActivity.class));
-            }
-        });
-        homeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
     }
