@@ -2,7 +2,9 @@ package com.mohit.foodator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -24,6 +26,13 @@ public class ForgotPwdActivity extends AppCompatActivity {
         resetPwd = findViewById(R.id.resetPwd);
         loginHere = findViewById(R.id.login_here);
 
+        loginHere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ForgotPwdActivity.this,LoginActivity.class));
+                finish();
+            }
+        });
 
     }
 }

@@ -264,7 +264,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/btn1" />
+                        app:srcCompat="@drawable/home" />
 
                     <TextView
                         android:id="@+id/textView111"
@@ -288,7 +288,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/btn2" />
+                        app:srcCompat="@drawable/person" />
 
                     <TextView
                         android:id="@+id/textView112"
@@ -336,7 +336,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/btn3" />
+                        app:srcCompat="@drawable/support" />
 
                     <TextView
                         android:id="@+id/textView114"
@@ -360,7 +360,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/btn4" />
+                        app:srcCompat="@drawable/settings" />
 
                     <TextView
                         android:id="@+id/textView151"

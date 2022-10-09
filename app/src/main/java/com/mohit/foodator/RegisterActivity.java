@@ -33,10 +33,10 @@ public class RegisterActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         button_reg = findViewById(R.id.button_reg);
-        if(mAuth.getCurrentUser() != null){
-            finish();
-            return;
-        }
+//        if(mAuth.getCurrentUser() != null){
+//            finish();
+//            return;
+//        }
 
         button_reg.setOnClickListener(new View.OnClickListener() {
             @Override
