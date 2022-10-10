@@ -47,7 +47,10 @@ dependencies {
     // Also add the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:20.3.0'
     implementation 'com.google.firebase:firebase-database:20.0.6'
+    // glide
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    // stylish progressBar
+//    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

@@ -9,20 +9,26 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class ForgotPwdActivity extends AppCompatActivity {
 
-    private EditText emailFP, newPwd, confNewPwd;
+    private EditText emailFP;
+    private EditText newPwd, confNewPwd;
     private Button resetPwd;
     private TextView loginHere;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_pwd);
 
+        mAuth = FirebaseAuth.getInstance();
+
         emailFP = findViewById(R.id.emailReset);
-        newPwd = findViewById(R.id.pwdReset);
-        confNewPwd = findViewById(R.id.confirmPass);
+//        newPwd = findViewById(R.id.pwdReset);
+//        confNewPwd = findViewById(R.id.confirmPass);
         resetPwd = findViewById(R.id.resetPwd);
         loginHere = findViewById(R.id.login_here);
 

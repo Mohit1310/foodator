@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/grey_bg">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -40,7 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="291dp"
-        android:layout_marginBottom="136dp"
         android:background="@drawable/grey_bg"
         android:orientation="vertical"
         android:padding="32dp"
@@ -73,49 +73,49 @@
             android:textColorHint="#8e8e8e"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New password"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView18"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="New password"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
 
-        <EditText
-            android:id="@+id/pwdReset"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edittext_bg"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:textColor="#8e8e8e"
-            android:textColorHint="#8e8e8e"
-            android:textSize="18sp" />
+        <!--        <EditText-->
+        <!--            android:id="@+id/pwdReset"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:background="@drawable/edittext_bg"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:textColor="#8e8e8e"-->
+        <!--            android:textColorHint="#8e8e8e"-->
+        <!--            android:textSize="18sp" />-->
 
-        <TextView
-            android:id="@+id/confirmPwdR"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Confirm new Password"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/confirmPwdR"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Confirm new Password"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
 
-        <EditText
-            android:id="@+id/confirmPass"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edittext_bg"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:textColor="#8e8e8e"
-            android:textColorHint="#8e8e8e"
-            android:textSize="18sp" />
+        <!--        <EditText-->
+        <!--            android:id="@+id/confirmPass"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:background="@drawable/edittext_bg"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPassword"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:textColor="#8e8e8e"-->
+        <!--            android:textColorHint="#8e8e8e"-->
+        <!--            android:textSize="18sp" />-->
 
 
         <LinearLayout
