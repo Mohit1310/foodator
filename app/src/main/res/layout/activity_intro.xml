@@ -5,7 +5,8 @@
     android:id="@+id/startBtn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroActivity">
+    tools:context=".IntroActivity"
+    android:background="@drawable/grey_bg">
 
     <ImageView
         android:id="@+id/imageView"
