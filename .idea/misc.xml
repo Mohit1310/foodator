@@ -18,6 +18,7 @@
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/orange_button.xml" value="0.1655" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/orange_light_banner.xml" value="0.1805" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/person.xml" value="0.233" />
+        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/ripple_effect.xml" value="0.23" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/search_background.xml" value="0.1805" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/settings-48px.xml" value="0.233" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/drawable/settings.xml" value="0.233" />
@@ -35,6 +36,7 @@
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_settings.xml" value="0.264" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/activity_show_detail.xml" value="0.152" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/bottomsheet_settings.xml" value="0.264" />
+        <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/bottomsheetlayout.xml" value="0.14425675675675675" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_cart.xml" value="0.2" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_category.xml" value="0.264" />
         <entry key="..\:/Learning Android Studio/Foodator/app/src/main/res/layout/viewholder_popular.xml" value="0.264" />
