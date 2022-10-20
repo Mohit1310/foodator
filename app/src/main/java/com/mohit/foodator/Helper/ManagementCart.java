@@ -34,7 +34,7 @@ public class ManagementCart {
         else{
             listFood.add(item);
         }
-        tinyDB.putListObject("CardList",listFood);
+        tinyDB.putListObject("CartList",listFood);// name was card != cart
         Toast.makeText(context, "Added to your Cart", Toast.LENGTH_SHORT).show();
     }
 
@@ -61,7 +61,7 @@ public class ManagementCart {
         ArrayList<FoodDomain> listFood = getListCart();
         double fee = 0;
         for(int i=0; i < listFood.size(); i++){
-            fee = fee+(listFood.get(i).getFee()+listFood.get(i).getNumberInCart());
+            fee = fee+(listFood.get(i).getFee()*listFood.get(i).getNumberInCart()); // mul sign
         }
         return fee;
     }
