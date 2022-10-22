@@ -1,5 +1,6 @@
 package com.mohit.foodator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.helper.widget.Layer;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +14,12 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout settingsBtn;
     private BottomSheetDialog bottomSheetDialog;
     private FirebaseAuth mAuth;
-    private TextView logout;
+    private TextView logout,userName;
     SharedPreferences sharedPreferences;
+    GoogleSignInOptions gso;
+    GoogleSignInClient gsc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +49,40 @@ public class MainActivity extends AppCompatActivity {
 
         settingsBtn = findViewById(R.id.settingsBtn);
         sharedPreferences = getSharedPreferences("",MODE_PRIVATE);
+        userName = findViewById(R.id.user_name);
+
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+        gsc = GoogleSignIn.getClient(this,gso);
+
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        if(account != null){
+            String name = account.getDisplayName();
+
+            userName.setText(name);
+        }
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                SignOut();
+//            }
+//        });
 
         recyclerViewCategory();
         recyclerViewPopular();
         bottomNavigation();
+    }
+
+    private void SignOut() {
+        gsc.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                finish();
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            }
+        });
     }
 
     private void bottomNavigation(){
